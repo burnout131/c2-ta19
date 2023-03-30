@@ -1,17 +1,16 @@
 package ejercicio1;
 
-import java.awt.EventQueue;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
+import javax.swing.JButton;
 import javax.swing.JFrame;
-import javax.swing.JPanel;
-import javax.swing.border.EmptyBorder;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
+import javax.swing.JPanel;
 import javax.swing.JTextField;
 import javax.swing.SwingConstants;
-import javax.swing.JButton;
-import java.awt.event.ActionListener;
-import java.awt.event.ActionEvent;
+import javax.swing.border.EmptyBorder;
 
 public class Saludador extends JFrame {
 
@@ -41,11 +40,15 @@ public class Saludador extends JFrame {
 		textField.setColumns(10);
 
 		JButton btnNewButton = new JButton("¡Saludar!");
+
 		btnNewButton.addActionListener(new ActionListener() {
+
 			public void actionPerformed(ActionEvent e) {
 				JOptionPane.showMessageDialog(null, "¡Hola " + textField.getText() + "!");
 			}
+
 		});
+
 		btnNewButton.setBounds(178, 174, 89, 23);
 		contentPane.add(btnNewButton);
 	}
