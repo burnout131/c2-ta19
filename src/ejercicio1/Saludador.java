@@ -16,10 +16,8 @@ public class Saludador extends JFrame {
 
 	private JPanel contentPane;
 	private JTextField textField;
-
-	/**
-	 * Create the frame.
-	 */
+	
+	
 	public Saludador() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 450, 300);
